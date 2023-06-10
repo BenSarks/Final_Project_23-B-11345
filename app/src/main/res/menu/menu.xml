@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_Dark_Mode"
+        android:orderInCategory="100"
+        android:icon="@drawable/light_mode_sun"
+        android:title="@string/dark_mode"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_english"
+        android:orderInCategory="100"
+        android:icon="@drawable/light_mode_sun"
+        android:title="@string/english"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:id="@+id/action_hebrew"
+        android:orderInCategory="100"
+        android:icon="@drawable/light_mode_sun"
+        android:title="@string/hebrew"
+        app:showAsAction="collapseActionView" />
+</menu>

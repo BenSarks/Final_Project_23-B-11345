@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name" translatable="false">My Packages</string>
+    <string name="login">Login</string>
+    <string name="email">Email:</string>
+    <string name="address">Address:</string>
+    <string name="phone">Phone:</string>
+    <string name="name">Name:</string>
+    <string name="cause">Cause:</string>
+    <string name="submit">Submit</string>
+    <string name="details">Details and tracking:</string>
+    <string name="edit">Edit</string>
+    <string name="english" translatable="false">English </string>
+    <string name="hebrew" translatable="false">Hebrew</string>
+
+    <string name="save">Save</string>
+    <string name="updated_user_info">Updated successfully</string>
+    <string name="updated_user_info_fail">Update failure</string>
+
+    <string name="added_support">Sent successfully</string>
+    <string name="added_support_fail">Fill out all the required fields</string>
+
+
+    <string name="Profile_pic">Profile</string>
+    <string name="password">Password:</string>
+    <string name="dark_mode">Dark-Mode </string>
+    <string name="title_activity_menu" translatable="false">MenuActivity</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="nav_header_title">User Name</string>
+    <string name="nav_header_subtitle">UserName@email.com</string>
+    <string name="nav_header_desc" translatable="false">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="home">Delivery address</string>
+    <string name="parcel_loaction">The package is here</string>
+
+    <string name="menu_profile">Profile</string>
+    <string name="menu_packages">My Packages</string>
+    <string name="menu_support">Support</string>
+    <string name="menu_additional">Additional Options</string>
+    <string name="menu_additional_logOut">log-Out</string>
+    <string name="menu_package_details">Additional information:</string>
+
+    <string name="package_num">Package number:</string>
+    <string name="history">History:</string>
+    <string name="package_Date_Tag">Order date:</string>
+    <string name="package_delivery_Tag">Delivery date:</string>
+
+    <string name="package_Delivery_Method_tag">Delivery Method:</string>
+    <string name="package_Status_tag">Status:</string>
+    <string name="package_id">Tracking number:</string>
+    <string name="package_Sender">Sender name:</string>
+
+
+    <string name="more_info">Details</string>
+
+    <string name="write">Write here:</string>
+    <string name="soon">Soon....</string>
+
+    <string name="packages_fragment_top_headline">On the way:</string>
+    <string name="packages_fragment_bottom_headline">Completed:</string>
+    <string-array name="support_options">
+        <item>Delayed delivery</item>
+        <item>Damaged package</item>
+        <item>Incorrect items</item>
+        <item>Billing issues</item>
+        <item>General inquiries</item>
+    </string-array>
+    <string-array name="parcel_methods">
+        <item>Express Courier Shipping</item>
+        <item>Collect point</item>
+    </string-array>
+    <string name="reason">Select a cause:</string>
+
+    <string-array name="parcel_status">
+        <item>Arrived at facility</item>
+        <item>Getting ready for delivery</item>
+        <item>Delayed</item>
+        <item>On the way</item>
+        <item>Ready to pickup</item>
+        <item>Delivered</item>
+        <item>Collected</item>
+        <item>Returned to sender</item>
+    </string-array>
+    <string-array name="requests_options">
+        <item>Sent</item>
+        <item>Received</item>
+        <item>Assigned for review</item>
+        <item>Finished</item>
+    </string-array>
+
+
+</resources>

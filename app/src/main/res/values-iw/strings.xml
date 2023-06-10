@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">My Packages</string>
+    <string name="login">כניסה</string>
+    <string name="email">אימייל:</string>
+    <string name="address">כתובת:</string>
+    <string name="phone">מספר טלפון:</string>
+    <string name="name">שם:</string>
+    <string name="cause">סיבה:</string>
+    <string name="submit">שלח</string>
+    <string name="save">שמור</string>
+    <string name="history">היסטוריית הפניות:</string>
+    <string name="home">כתובת שילוח</string>
+    <string name="parcel_loaction">החבילה כאן</string>
+    <string name="updated_user_info">המידה עודכן בהצלחה</string>
+    <string name="updated_user_info_fail">המידה לא עודכן</string>
+    <string name="added_support">נשלח בהצלחה</string>
+    <string name="added_support_fail">אנא מלאו את כל השדות</string>
+    <string name="details">מידע ומעקב:</string>
+    <string name="edit">שנה</string>
+    <string name="Profile_pic">פרופיל</string>
+    <string name="password">סיסמא:</string>
+    <string name="dark_mode">מצב-לילה</string>
+    <string name="nav_header_title">שם משתמש</string>
+    <string name="nav_header_subtitle">אימייל</string>
+    <string name="action_settings">הגדרות</string>
+    <string name="menu_profile">פרופיל</string>
+    <string name="menu_packages">החבילות שלי</string>
+    <string name="menu_support">תמיכה</string>
+    <string name="menu_additional">אפשרויות נוספות</string>
+    <string name="menu_additional_logOut">התנתקות</string>
+    <string name="menu_package_details">מידע נוסף:</string>
+    <string name="package_num">מספר מעקב:</string>
+    <string name="package_Date_Tag">תאריך הזמנה:</string>
+    <string name="package_delivery_Tag">תאריך קבלה:</string>
+    <string name="package_Delivery_Method_tag">שיטת שילוח:</string>
+    <string name="package_Status_tag">סטטוס:</string>
+    <string name="package_id">מספר מעקב:</string>
+    <string name="package_Sender">שם השולח:</string>
+    <string name="more_info">פרטים</string>
+    <string name="write">רשום כאן:</string>
+    <string name="soon">בקרוב....</string>
+    <string name="packages_fragment_top_headline">בדרך אלי:</string>
+    <string name="packages_fragment_bottom_headline">הושלם:</string>
+    <string name="reason">בחר סיבה:</string>
+    <string-array name="support_options">
+        <item>עיכוב</item>
+        <item>חבילה פגומה</item>
+        <item>מוצרים שגויים</item>
+        <item>תשלומים</item>
+        <item>כללי</item>
+    </string-array>
+    <string-array name="parcel_methods">
+        <item>שליח עד הבית</item>
+        <item>נקודת איסוף</item>
+    </string-array>
+
+    <string-array name="parcel_status">
+        <item>הגיע למתקן</item>
+        <item>מתכונן למשלוח</item>
+        <item>מתעכב</item>
+        <item>בדרך</item>
+        <item>מוכן לאיסוף</item>
+        <item>נמסר</item>
+        <item>נאסף</item>
+        <item>הוחזר לשולח</item>
+    </string-array>
+
+    <string-array name="requests_options">
+        <item>נשלח</item>
+        <item>התקבל</item>
+        <item>הועבר לטיפול נציג</item>
+        <item>הסתיים</item>
+    </string-array>
+
+
+</resources>

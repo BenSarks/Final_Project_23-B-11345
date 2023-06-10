@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.Support.SupportFragment">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false"
+        app:lottie_rawRes="@raw/support_team_animation">
+
+    </com.airbnb.lottie.LottieAnimationView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+        <LinearLayout
+            android:id="@+id/top_text_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="1">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_weight="0.5"
+                android:maxLines="1"
+                android:minLines="1"
+                android:text="@string/cause"
+                android:textSize="20sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_weight="0.5"
+                android:maxLines="1"
+                android:minLines="1"
+                android:text="@string/package_num"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/spinner_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_text_linear"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="1">
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/possible_Support_Spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:prompt="@string/reason"
+                android:spinnerMode="dropdown" />
+            /
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/possible_Support_Spinner_Packages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:prompt="@string/package_num"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/support_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner_linear_layout"
+            android:orientation="horizontal"
+            android:padding="10dp"
+
+            android:weightSum="1">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/support_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cursorVisible="false"
+                    android:gravity="top|start"
+                    android:hint="@string/write"
+                    android:inputType="textMultiLine"
+                    android:lines="3"
+                    android:maxLines="3"
+                    android:minLines="3" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/support_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/support_layout"
+            android:layout_marginTop="30dp"
+            android:text="@string/submit"
+            android:textSize="18sp"
+            app:cornerRadius="50dp" />
+
+        <RelativeLayout
+            android:id="@+id/history_tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/support_button"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:maxLines="1"
+                android:minLines="1"
+                android:text="@string/history"
+                android:textSize="20sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/requests_RecyclerView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="14dp"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:paddingHorizontal="10dp"
+                tools:listitem="@layout/request_item" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

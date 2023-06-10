@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.Packages.DetailsSubFragments.DetailsSubFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/map_animation"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/map_animation">
+
+        </com.airbnb.lottie.LottieAnimationView>
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/map_animation"
+            app:title="@string/details">
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/package_Details_LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:padding="20dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:elevation="8dp"
+            android:padding="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/textview_Sender_name_Tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="6dp"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:padding="5dp"
+                    android:text="@string/package_Sender" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/textview_Sender_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_toEndOf="@+id/textview_Sender_name_Tag"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:padding="5dp" />
+
+                <com.google.android.material.textview.MaterialTextView
+
+                    android:id="@+id/textview_Package_Method_Tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textview_Sender_name_Tag"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="6dp"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:padding="5dp"
+                    android:text="@string/package_Delivery_Method_tag" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/textview_Package_Method"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_below="@+id/textview_Sender_name"
+                    android:layout_toEndOf="@+id/textview_Package_Method_Tag"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:padding="5dp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/textview_Package_Id_Tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textview_Package_Method_Tag"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="6dp"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:padding="5dp"
+                    android:text="@string/package_id" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/textview_Package_Id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textview_Package_Method"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_toEndOf="@+id/textview_Package_Id_Tag"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:padding="5dp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/textview_Package_Date_Tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textview_Package_Id_Tag"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="6dp"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:padding="5dp"
+                    android:text="@string/package_Date_Tag" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/textview_Package_Date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textview_Package_Id"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_toEndOf="@+id/textview_Package_Date_Tag"
+
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:padding="5dp" />
+
+                <com.google.android.material.textview.MaterialTextView
+
+                    android:id="@+id/textview_package_Status_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textview_Package_Date_Tag"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="6dp"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:padding="5dp"
+                    android:text="@string/package_Status_tag" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/textview_package_Status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textview_Package_Date"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_toEndOf="@+id/textview_package_Status_tag"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:padding="5dp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/textview_delivery_date_tag"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textview_package_Status_tag"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="6dp"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:padding="5dp"
+                    android:text="@string/package_delivery_Tag" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/textview_delivery_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textview_package_Status_tag"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_toEndOf="@+id/textview_delivery_date_tag"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:padding="5dp" />
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/sub_fragment_mapview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="20dp">
+
+    </androidx.fragment.app.FragmentContainerView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

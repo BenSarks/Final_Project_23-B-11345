@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_packages">
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.final_project_23b11345.ui.Profile.ProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.example.final_project_23b11345.ui.Login.LoginFragment"
+        android:label="@string/login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_nav_login_to_nav_packages"
+            app:destination="@id/nav_packages" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_packages"
+        android:name="com.example.final_project_23b11345.ui.Packages.PackagesFragment"
+        android:label="@string/menu_packages"
+        tools:layout="@layout/fragment_packages">
+        <action
+            android:id="@+id/action_nav_packages_to_packageDetailsFragment"
+            app:destination="@id/packageDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_support"
+        android:name="com.example.final_project_23b11345.ui.Support.SupportFragment"
+        android:label="@string/menu_support"
+        tools:layout="@layout/fragment_support" />
+    <fragment
+        android:id="@+id/packageDetailsFragment"
+        android:name="com.example.final_project_23b11345.ui.Packages.DetailsSubFragments.DetailsSubFragment"
+        android:label="@string/menu_package_details"
+        tools:layout="@layout/fragment_package_details" >
+        <action
+            android:id="@+id/action_packageDetailsFragment_to_nav_packages"
+            app:destination="@id/nav_packages" />
+    </fragment>
+
+
+</navigation>

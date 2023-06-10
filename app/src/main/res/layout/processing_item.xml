@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:elevation="8dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textview_Package_Method_Tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="6dp"
+            android:maxLines="1"
+            android:minLines="1"
+            android:padding="5dp"
+            android:text="@string/package_Delivery_Method_tag" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textview_Package_Method"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="6dp"
+            android:layout_toEndOf="@+id/textview_Package_Method_Tag"
+            android:maxLines="1"
+            android:minLines="1"
+            android:padding="5dp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textview_Package_Id_Tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_Package_Method_Tag"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="6dp"
+            android:maxLines="1"
+            android:minLines="1"
+            android:padding="5dp"
+            android:text="@string/package_id" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textview_Package_Id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_Package_Method"
+            android:layout_toEndOf="@+id/textview_Package_Id_Tag"
+            android:padding="5dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="6dp"
+            android:maxLines="1"
+            android:minLines="1"
+             />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textview_Package_Date_Tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_Package_Id_Tag"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="6dp"
+            android:maxLines="1"
+            android:minLines="1"
+            android:padding="5dp"
+            android:text="@string/package_Date_Tag" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textview_Package_Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_Package_Id"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="6dp"
+            android:layout_toEndOf="@+id/textview_Package_Date_Tag"
+
+            android:maxLines="1"
+            android:minLines="1"
+            android:padding="5dp" />
+
+        <com.google.android.material.textview.MaterialTextView
+
+            android:id="@+id/textview_packageStatus_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_Package_Date_Tag"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="6dp"
+            android:maxLines="1"
+            android:minLines="1"
+            android:padding="5dp"
+            android:text="@string/package_Status_tag" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/processing_Textview_packageStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_Package_Date"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="6dp"
+            android:layout_toEndOf="@+id/textview_packageStatus_tag"
+            android:maxLines="1"
+            android:minLines="1"
+            android:padding="5dp" />
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:id="@+id/processingIndicator"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_below="@+id/textview_packageStatus_tag"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp"
+            app:indeterminateAnimationType="disjoint"
+            app:indicatorDirectionLinear="startToEnd"
+            app:trackCornerRadius="50dp"
+            app:trackThickness="8dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/processing_Details_BTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/processingIndicator"
+            android:layout_centerHorizontal="true"
+            android:padding="5dp"
+            android:text="@string/more_info" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

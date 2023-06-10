@@ -1,0 +1,88 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:elevation="8dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textview_Package_Date_Tag"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="6dp"
+            android:maxLines="1"
+            android:minLines="1"
+            android:text="@string/package_delivery_Tag" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/textview_Package_Date_Tag"
+            android:padding="5dp"
+            android:id="@+id/textview_packageDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="6dp"
+            android:maxLines="1"
+            android:minLines="1" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textview_packageStatus_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_Package_Date_Tag"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="6dp"
+            android:layout_alignParentStart="true"
+            android:maxLines="1"
+            android:minLines="1"
+            android:padding="5dp"
+            android:text="@string/package_Status_tag"
+>
+
+        </com.google.android.material.textview.MaterialTextView>
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textview_packageStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_Package_Date_Tag"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="6dp"
+            android:layout_toEndOf="@+id/textview_packageStatus_tag"
+            android:maxLines="1"
+            android:minLines="1"
+            android:padding="5dp"
+/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/processed_Details_BTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_packageStatus"
+            android:layout_centerHorizontal="true"
+            android:padding="5dp"
+            android:text="@string/more_info" />
+
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
