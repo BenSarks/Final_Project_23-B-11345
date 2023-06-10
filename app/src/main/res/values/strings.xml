@@ -50,6 +50,7 @@
     <string name="package_Status_tag">Status:</string>
     <string name="package_id">Tracking number:</string>
     <string name="package_Sender">Sender name:</string>
+    <string name="package_deliver_address">Delivery address:</string>
 
 
     <string name="more_info">Details</string>

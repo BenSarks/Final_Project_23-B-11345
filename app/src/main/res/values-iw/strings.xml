@@ -17,6 +17,7 @@
     <string name="added_support_fail">אנא מלאו את כל השדות</string>
     <string name="details">מידע ומעקב:</string>
     <string name="edit">שנה</string>
+    <string name="package_deliver_address">כתובת שילוח:</string>
     <string name="Profile_pic">פרופיל</string>
     <string name="password">סיסמא:</string>
     <string name="dark_mode">מצב-לילה</string>
