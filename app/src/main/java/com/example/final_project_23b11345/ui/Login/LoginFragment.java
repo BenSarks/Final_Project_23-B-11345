@@ -53,7 +53,6 @@ public class LoginFragment extends Fragment {
         if(email.isEmpty()||password.isEmpty()){
              Notifier.getInstance().toast("Fill all fields",200);
         }else{
-
             authentication.signInWithEmailAndPassword(email,password).
                     addOnSuccessListener(authResult -> {
                         NavController navController = Navigation.findNavController(requireActivity(), R.id.nav_host_fragment_content_menu);

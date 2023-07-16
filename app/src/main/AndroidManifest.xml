@@ -48,7 +48,6 @@
         <activity
             android:name=".Activities.MenuActivity"
             android:exported="true"
-            android:label="@string/title_activity_menu"
             android:theme="@style/Theme.Final_Project_23B11345.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
